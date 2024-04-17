@@ -1,9 +1,9 @@
-marks = input('Введите оценки через пробел:')
-marks = marks.split(' ')
-a5 = 0
-for mark in marks:
-    if mark == '5':
-       a5 += 1 
-res = a5 / len(marks)*100
-print('Получено пятёрок (%) -',res)
-
+teacher = list()
+t_name = input('Фамилия предподователя:')
+t_position = input('Должность:')
+s_amout = input('Количество студентов в группах:')
+s_amout = s_amout.split(' ')
+teacher.append(t_name)
+teacher.append(t_position)
+teacher.append(s_amout)
+print(teacher)
